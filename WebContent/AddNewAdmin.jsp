@@ -23,13 +23,19 @@ $(document).ready(function() {
     $('#new_admin').DataTable({
         dom: 'Bfrtip',
         buttons: [
-            'excel', 'pdf'
+            'excel', 'pdf','print'
         ]
     });
 } );
 </script>
 </head>
 <body>
+<%
+	if(session.getAttribute("loggedUserMail")==null)
+	{
+		response.sendRedirect("Login.jsp");
+	}
+%>
 <%@include file="Cpanel/header.jsp" %>	
 		<div id="main">
 			<div class="container-fluid">

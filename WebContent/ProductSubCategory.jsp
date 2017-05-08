@@ -28,7 +28,7 @@ $(document).ready(function() {
     $('#add_sub').DataTable({
         dom: 'Bfrtip',
         buttons: [
-            'excel', 'pdf'
+            'excel', 'pdf' ,'print'
         ]
     });
 } );
@@ -36,6 +36,12 @@ $(document).ready(function() {
 </head>
 
 <body>
+<%
+	if(session.getAttribute("loggedUserMail")==null)
+	{
+		response.sendRedirect("Login.jsp");
+	}
+%>
 <%@include file="Cpanel/header.jsp" %>	
 		<div id="main">
 			<div class="container-fluid">

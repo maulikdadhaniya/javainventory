@@ -12,6 +12,12 @@
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
 	</head>
 <body class='login'>
+<%
+	if(session.getAttribute("loggedUserMail")==null)
+	{
+		response.sendRedirect("Login.jsp");
+	}
+%>
 	<div class="wrapper">
 		<h1><a href="Login.jsp"><img src="img/logo-big.png" alt="" class='retina-ready' width="59" height="49">Mini-Mouse</a></h1>
 		<div class="login-body">

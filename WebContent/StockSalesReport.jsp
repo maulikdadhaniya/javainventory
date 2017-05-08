@@ -30,6 +30,12 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
+<%
+	if(session.getAttribute("loggedUserMail")==null)
+	{
+		response.sendRedirect("Login.jsp");
+	}
+%>
 <%@include file="Cpanel/header.jsp" %>	
 		<div id="main">
 			<div class="container-fluid">

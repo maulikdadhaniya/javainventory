@@ -23,22 +23,33 @@
 	<!-- Apple devices Homescreen icon -->
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
 	<!--  -->
-	
-    <!-- Bootstrap Core CSS -->
-    <!-- <link href="slider/css/bootstrap.min.css" rel="stylesheet">
-    <link href="slider/css/bootstrap.css" rel="stylesheet">
-    Custom CSS
-    <link href="slider/css/full-slider.css" rel="stylesheet"> -->
+	<style type="text/css">
+		.mainFooter
+		{
+	     background-color: navy;
+         color: #fff;
+         padding: 10px 5px;
+         display:flex;
+         justify-content: flex-start;
+         text-align: center;
+		}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+@media (max-width: 500px){
+  .mainFooter{
+    background-color: orange;
+    text-align: center;
+  }
+}
+	</style>
 
 </head>
 <body>
+<%
+	if(session.getAttribute("loggedUserMail")==null)
+	{
+		response.sendRedirect("Login.jsp");
+	}
+%>
 <%@include file="Cpanel/header.jsp" %>
 <style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
 
@@ -151,6 +162,7 @@
 		    width:21%;
 		    margin-left: 45px;
 		    border-radius:6px;
+		    
 		}
 		
 		.serviceBox1:hover, .serviceBox2:hover, .serviceBox3:hover, .serviceBox4:hover
@@ -177,6 +189,7 @@
 		    -webkit-box-shadow: 0 0 10px #bdbdbd;
 		    box-shadow: 0 0 10px #bdbdbd;
 		    margin: 20px;
+		    
 		}
 		.serviceBox1{
 			background-color: #002A66   !important;
@@ -201,12 +214,13 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1349px;height:300px;overflow:hidden;">
             <div>
                 <img data-u="image" src="img/IMG_163058.jpg" />
-                <div style="position:absolute;top:30px;left:30px;width:480px;height:90px;z-index:0;font-size:30px;color:#ffffff;line-height:60px;">MINI-MOUSE</div>
-                <div style="position:absolute;top:200px;left:30px;width:480px;height:120px;z-index:0;font-size:20px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+                <div style="position:absolute;top:30px;left:30px;width:480px;height:90px;z-index:0;font-size:30px;color:#ffff4d;line-height:60px;text-shadow: 2px 2px 5px red;">MINI-MOUSE</div>
+                <div style="position:absolute;top:200px;left:30px;width:480px;height:120px;z-index:0;font-size:20px;color:#ffffff;line-height:38px;">Simple Inventory Management System<br> Easy to use</div>
             </div>
             <div>
                 <img data-u="image" src="img/computer-hardware.jpg" />
-                <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+                <div style="position:absolute;top:30px;left:30px;width:480px;height:90px;z-index:0;font-size:30px;color:#ffffff;line-height:60px;">Easy to Manage Products..... <br>Generate Reports....</div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Manage Products....</div>
             </div>
         </div>
 
@@ -221,32 +235,37 @@
     </div>
 <br/>	
 <br/>
+<center><h2><font face="Jura">Our Services</font></h2></center>
 <div id="serviceBox"> 
     <div class="serviceBox1">
          <div class="box">
-        <h2>Heading 2</h2>
-        <p> Information</p>
+        <h2><font face="Jura">Products</font></h2>
+        <p> In marketing, a product is anything that can be offered to a market that might satisfy a want or need. In retailing, products are called merchandise. In manufacturing, products are bought as raw materials and sold as finished goods. A service is another common product type.</p>
          </div>
     </div>
      <div class="serviceBox2">
          <div class="box">
-        <h2>Heading 2</h2>
-        <p> Information</p>
+        <h2><font face="Jura">Inventory</font></h2>
+        <p> Inventory management is a discipline primarily about specifying the shape and placement of stocked goods. It is required at different locations within a facility or within many locations of a supply network to precede the regular and planned course of production and stock of materials.</p>
          </div>
     </div>
     <div class="serviceBox3">
         <div class="box">
-        <h2>Heading 3</h2>
-        <p>Information</p>
+       <h2><font face="Jura">Transaction</font></h2>
+        <p>In the field of inventory management, a stock keeping unit (SKU) is a distinct type of item for sale and purchase, such as a product or service, and all attributes associated with the item type that distinguish it from other item types.</p>
         </div>
      </div>
     <div class="serviceBox4">
         <div class="box">
-        <h2>Heading 4</h2>
-        <p>Information</p>
+        <h2><font face="Jura">Reports</font></h2>
+        <p>This reports lists all RMUs in an account, along with basic unit information. The report can include information such as Facility ID, MIN number, service status, latitude and longitude information, and information for units assigned to your user ID such as unit name, ID, type, and status.</p>
         </div>
      </div>
  </div>
 <br><br>
+<br><br>
+<div class="mainFooter">
+   <centre><p>2017. All rights reserved. Mini-Mouse.</p></centre>
+    </div>
 </body>
 </html>
