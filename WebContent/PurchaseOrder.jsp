@@ -9,6 +9,7 @@
 <head>
 <%@include file="Cpanel/css.jsp" %>
 <%@include file="Cpanel/js.jsp" %>
+<link rel="shortcut icon" href="img/minimouse header.png" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Purchase Order</title>
 
@@ -63,9 +64,10 @@ font-weight:bold !important;
 		<div id="main">
 			<div class="container-fluid">
 				<div class="page-header">
-					<div class="pull-left">
-						<h1>Purchase Order</h1>
+					<center><div class="pull-left">
+						
 					</div>
+					</center>
 				</div>
 				<div id="printableArea">
 					<c:set var="invoice" value="${invoice}" />

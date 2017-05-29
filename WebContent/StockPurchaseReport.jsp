@@ -10,6 +10,7 @@
 <title>Total Purchase Report</title>
 <%@include file="Cpanel/css.jsp" %>
 <%@include file="Cpanel/js.jsp" %>
+<link rel="shortcut icon" href="img/minimouse header.png" />
 
 <style>
 #main

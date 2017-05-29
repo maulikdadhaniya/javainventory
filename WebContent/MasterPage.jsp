@@ -19,7 +19,7 @@
 <title>Index</title>
 <%@include file="Cpanel/css.jsp" %>
 <%@include file="Cpanel/js.jsp" %>
-	<link rel="shortcut icon" href="img/favicon.ico" />
+	<link rel="shortcut icon" href="img/minimouse header.png" />
 	<!-- Apple devices Homescreen icon -->
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
 	<!--  -->
@@ -265,7 +265,7 @@
 <br><br>
 <br><br>
 <div class="mainFooter">
-   <centre><p>2017. All rights reserved. Mini-Mouse.</p></centre>
+   <centre><p style="margin-left: 550px;">2017. All rights reserved. Mini-Mouse.</p></centre>
     </div>
 </body>
 </html>

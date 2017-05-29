@@ -10,6 +10,7 @@
 <head>
 <%@include file="Cpanel/css.jsp" %>
 <%@include file="Cpanel/js.jsp" %>
+<link rel="shortcut icon" href="img/minimouse header.png" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Client</title>
 
@@ -57,9 +58,7 @@ $(document).ready(function() {
 							<i class="icon-angle-right"></i>
 						</li>
 					</ul>
-					<div class="close-bread">
-						<a href="#"><i class="icon-remove"></i></a>
-					</div>
+					
 				</div>
 				<div class="row-fluid">
 					<div class="span12">

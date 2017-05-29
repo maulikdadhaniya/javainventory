@@ -8,15 +8,16 @@
 <%@include file="Cpanel/js.jsp" %>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login</title>
-	<link rel="shortcut icon" href="img/favicon.ico" />
+	<link rel="shortcut icon" href="img/minimouse header.png" />
 	<!-- Apple devices Homescreen icon -->
 	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
 	
 </head>
 <body>
 <body class='login'>
-	<div class="wrapper">
-		<h1><a href="login.jsp"><img src="img/logo-big.png" alt="" class='retina-ready' width="59" height="49">Mini-Mouse</a></h1>
+	
+	<div class="wrapper"><a href="Login.jsp">
+		<h1><img src="img/minimouse.png" alt="" class='retina-ready' width="59" height="49"><font face="Jura">Mini-Mouse</font></a></h1>
 		<div class="login-body">
 			<h2>SIGN IN</h2>
 			<form action="LoginServlet" method='post' class='form-validate' id="test">
