@@ -645,7 +645,7 @@ header.opaque {
 
 /* header logo */
 header .logo {
-	background: #fdc501;
+	
 	float: left;
 	width: auto;
 	margin-left: 15px;
@@ -667,8 +667,8 @@ header .logo a {
 	color: transparent;
 	width: 114px;
 	height: 66px;
-	background: url("../images/logoK@2x.png") no-repeat center;
-	background-size: 61px 14px;
+	background: url("../../img/minimouse.png") no-repeat center;
+	background-size: 50px 50px;
 }
 
 /* header social */

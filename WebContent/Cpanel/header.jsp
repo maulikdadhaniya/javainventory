@@ -336,7 +336,7 @@
 	</div>
 	<div id="navigation">
 		<div class="container-fluid">
-			<a href="#" id="brand">Mini-Mouse</a>
+			<a href="MasterPage.jsp" id="brand">Mini-Mouse</a>
 			<ul class='main-nav'>
 				<li>
 					<a href="MasterPage.jsp">

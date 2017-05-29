@@ -7,7 +7,7 @@
 <%@include file="Cpanel/js.jsp"%>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Forgot Password</title>
-<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="shortcut icon" href="img/minimouse header.png" />
 <!-- Apple devices Homescreen icon -->
 <link rel="apple-touch-icon-precomposed"
 	href="img/apple-touch-icon-precomposed.png" />
@@ -16,8 +16,8 @@
 <body class='login'>
 	<div class="wrapper">
 		<h1>
-			<a href="Login.jsp"><img src="img/logo-big.png" alt=""
-				class='retina-ready' width="59" height="49">Mini-Mouse</a>
+			<a href="Login.jsp"><img src="img/minimouse.png" alt=""
+				class='retina-ready' width="59" height="49"><font face="Jura">Mini-Mouse</font></a>
 		</h1>
 		<div class="login-body">
 			<h2>Forgot Password</h2>
